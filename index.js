@@ -1,5 +1,18 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  for (let i=0; i<array.length; i++){
+    //get the nummber when you subtrat array element from target
+    const num = target-array[i];
+    //loop to the remaining array elements
+    for (let j=i+1; j<array.length; j++){
+      if(array[j]===num){
+        return true
+      };
+    }
+  }
+  return false
+
+  
 }
 
 /* 
